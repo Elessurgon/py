@@ -33,7 +33,8 @@ def buildworddict(text):
 		worddict[words[i-1]][words[i]] +=1
 	return worddict
 
-text = str(urlopen('http://pythonscraping.com/files/inaugurationSpeech.txt').read(),'utf-8')
+text = input() 
+text = str(urlopen(text).read(),'utf-8')
 worddict = buildworddict(text)	
 length = 100
 chain = ['I']
