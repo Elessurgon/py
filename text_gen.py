@@ -33,8 +33,8 @@ def buildworddict(text):
 		worddict[words[i-1]][words[i]] +=1
 	return worddict
 
-text = input() 
-text = str(urlopen(text).read(),'utf-8')
+seedText = input() 
+text = str(urlopen(seedText).read(),'utf-8')
 worddict = buildworddict(text)	
 length = 100
 chain = ['I']
